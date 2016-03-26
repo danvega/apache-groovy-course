@@ -1,7 +1,0 @@
-enum Days {
-    SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
-}
-
-(Days.SUNDAY..DAYS.THURSDAY).each { day ->
-    println day
-}
