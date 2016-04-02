@@ -36,4 +36,32 @@ println nums
 println numsTimesTen
 println newTimesTen
 
+// map functions
+def person = [first:"Dan",last:"Vega",email:"danvega@gmail.com"]
 
+person.each { entry -> 
+    println entry
+}
+
+person.each { k, v ->
+    println "$k:$v"
+}
+
+
+// map | filter | reduce
+class Person {
+    String name
+    int age
+}
+
+def people = [
+    new Person(name:"Joe", age:45),
+    new Person(name:"Mary", age:35),
+    new Person(name:"Andrew", age:25)
+]
+
+assert people
+    .findAll { it.age < 40 }
+    .collect {it.name.toUpperCase() }
+    .sort()
+    .join(', ') == "ANDREW, MARY"
