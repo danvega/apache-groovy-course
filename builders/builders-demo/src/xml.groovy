@@ -1,17 +1,23 @@
 import groovy.xml.MarkupBuilder
 
 MarkupBuilder builder = new MarkupBuilder()
-builder.omitNullAttributes = true
 builder.omitEmptyAttributes = true
+builder.omitNullAttributes = true
 
-builder.people {
-    person(id:1){
-        name 'Dan'
+builder.sports {
+    sport(id:1) {
+        name 'Baseball'
     }
-    person(id:2){
-        name 'Joe'
+    sport(id:2) {
+        name 'Basketball'
     }
-    person(id:null){
-        name 'null test'
+    sport(id:3) {
+        name 'Football'
+    }
+    sport(id:4) {
+        name 'Hockey'
+    }
+    sport(id:null,foo:'') {
+        name ''
     }
 }
