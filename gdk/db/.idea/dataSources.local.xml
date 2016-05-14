@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - twitter@localhost" uuid="978dd66e-3410-4d3c-a410-dd7bb5d8fa71">
+      <secret-storage>master_key</secret-storage>
+      <user-name>twitter</user-name>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.therealdanvega.iml" filepath="$PROJECT_DIR$/.idea/modules/com.therealdanvega.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.therealdanvega_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.therealdanvega_main.iml" group="com.therealdanvega" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.therealdanvega_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.therealdanvega_test.iml" group="com.therealdanvega" />
+    </modules>
+  </component>
+</project>
