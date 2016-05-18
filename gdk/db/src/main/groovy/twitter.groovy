@@ -6,12 +6,8 @@ String password = "password"
 
 def sql = Sql.newInstance("jdbc:mysql://localhost:3306/twitter", username,password, "com.mysql.jdbc.Driver")
 
-println "Connected!"
-
-
 // create schema
 sql.execute('DROP TABLE IF EXISTS users')
-
 sql.execute '''
 CREATE TABLE users (
       id INT NOT NULL,
@@ -21,14 +17,12 @@ CREATE TABLE users (
   );
 '''
 
-
-// create data
+// create some data
 sql.execute '''
     INSERT INTO users (id,username,bio) VALUES (1,'therealdanvega','Programmer.Blogger.YouTuber.Teacher.')
 '''
 
-// we could even create a list of maps here
-Map twitterUser = [id:2,username: 'groovylang',bio:'Twitter feed of the Groovy Programming Language.']
+def twitterUser = [id:2,username:'foo',bio:'foo']
 
 sql.execute """
   INSERT INTO users (id,username,bio)
@@ -37,14 +31,14 @@ sql.execute """
 """
 
 
-// query the data
-// def rows = ...
-List<GroovyRowResult> rows = sql.rows('select * from users')
-println rows
+//List<GroovyRowResult> rows = sql.rows("select * from users")
+//println rows
 
 sql.eachRow('select * from users') { row ->
     println "Tweet: @${row.username}"
 }
 
+
 // calling close manually
 sql.close()
+println "Completed!"
