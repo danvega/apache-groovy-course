@@ -27,4 +27,4 @@ With the same data from the xml version build an HTML page that lists that data.
 
 Bonus
 ------------------
-Write the content xml to a file
+Using a FileWriter write the contents of the HTML from the MarkupBuilder to a file.

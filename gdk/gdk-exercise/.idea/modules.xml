@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gdk-exercise.iml" filepath="$PROJECT_DIR$/.idea/modules/gdk-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gdk-exercise_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gdk-exercise_main.iml" group="gdk-exercise" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gdk-exercise_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gdk-exercise_test.iml" group="gdk-exercise" />
+    </modules>
+  </component>
+</project>
