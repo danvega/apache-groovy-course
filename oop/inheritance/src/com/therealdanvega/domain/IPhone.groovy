@@ -1,6 +1,6 @@
 package com.therealdanvega.domain
 
-@groovy.transform.ToString()
+
 class IPhone extends Phone {
 
     String iosVersion
