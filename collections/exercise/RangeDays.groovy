@@ -34,6 +34,9 @@ println dayRange.to
 
 // Bonus: next() and previous() are equivalent to
 // ++ and -- operators.
+println "next/previous"
+println Days.WEDNESDAY.next()
+println Days.WEDNESDAY.previous()
 def wednesday = Days.WEDNESDAY
 assert Days.THURSDAY == ++wednesday
 assert Days.WEDNESDAY == --wednesday

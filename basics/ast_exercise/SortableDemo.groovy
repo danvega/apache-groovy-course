@@ -7,6 +7,16 @@ class Person {
     String firstName
     String lastName
     String gender
+
+//    def propertyMissing(String name) {
+//        this.parameters[name]
+//        this.properties[name]
+//    }
+//
+//    void setProperty( String property, Object value ) {
+//        this.properties[ property ] = value
+//    }
+
 }
 
 def p1 = new Person(firstName:"Joe",lastName:"Vega")
@@ -17,6 +27,10 @@ def p5 = new Person(firstName:"Alan",lastName:"Junior")
 def p6 = new Person(firstName:"William",lastName:"Nelson")
 def p7 = new Person(firstName:"Geena",lastName: "Angel")
 def p8 = new Person()
+//def p9 = new Person(firstName: "Tomasz", lastName: "Szyborski", languages:["Python", "Java", "Groovy"])
+
+//println p9.languages
+
 
 def people = [p1,p2,p3,p4,p5,p6,p7,p8]
 println "unsorted: $people"

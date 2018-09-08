@@ -66,9 +66,11 @@ List people = [
     [name:'Jason',city:"Cleveland"]    
 ]
 
+println "Difference between find and findAll"
 println people.find { person -> person.city == "Cleveland" }
 println people.findAll { person -> person.city == "Cleveland" }
 
+println "Difference between any and every"
 println people.any { person -> person.city == "Cleveland" }
 println people.every { person -> person.city == "Cleveland" }
 println people.every { person -> person.name.size() >= 3 }
@@ -78,6 +80,12 @@ println peopleByCity
 def newyorkers = peopleByCity["New York City"]
 def clevelanders = peopleByCity.Cleveland 
 
+println "newyorkers:"
+newyorkers.each {
+    println it.name
+}
+
+println "cleavlanders:"
 clevelanders.each {
     println it.name
 }
