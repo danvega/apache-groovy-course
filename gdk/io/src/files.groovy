@@ -1,6 +1,6 @@
 // create a new file
-def file = new File('dummy.txt')
-file.write("This is some new text \n")
+//def file = new File('dummy.txt')
+//file.write("This is some new text \n")
 
 // or new File('dummy.txt').text = 'this is a one liner'
 
@@ -45,3 +45,21 @@ file.write("This is some new text \n")
 //        println file.name
 //    }
 //}
+
+
+File file = new File("dummy.txt")
+//file.write "asdasd"
+file.append "asdasd\n"
+file.append "asdasd\n"
+file.append "asdasd\n"
+file.append "asdasd\n"
+
+def a = file.readLines()
+println a
+
+infoList = ["zxc", "asd", "xv", "dfg"]
+new File("anotherFile").withWriter { out ->
+    infoList.each {
+        out.println it
+    }
+}
