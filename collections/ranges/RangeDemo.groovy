@@ -1,7 +1,11 @@
 Range r = 1..10
+println "range"
 println r
+println "range class name"
 println r.class.name
+println "range from"
 println r.from
+println "range to"
 println r.to
 
 assert (0..10).contains(0)
@@ -23,3 +27,8 @@ println days
 
 Range letters = 'a'..'z'
 println letters
+letters.each {print it}
+println ""
+'A'..'z'.each {
+    print it
+}

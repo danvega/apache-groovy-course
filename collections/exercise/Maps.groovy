@@ -16,3 +16,25 @@ println map
 println map.getClass().getName()
 println map.size()
 println map.values()
+
+println("EACH")
+map.each {
+    print it
+}
+println("EACH WITH INDEX")
+//map.eachWithIndex{ Entry<Integer, String> entry, int i ->
+//    print i
+//    print entry
+//}
+//println("EACH PARALLEL")
+//map.eachParallel {
+//    println "it.key : it.value"
+//}
+//println("EACH WITH INDEX PARALLEL")
+//map.eachWithIndexParallel {
+//    println "it.key : it.value"
+//}
+println("REVERSE EACH")
+map.reverseEach {
+    println "$it.key : $it.value"
+}

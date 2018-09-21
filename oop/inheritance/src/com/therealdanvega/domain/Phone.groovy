@@ -1,5 +1,6 @@
 package com.therealdanvega.domain
 
+@groovy.transform.ToString()
 class Phone {
 
     String name

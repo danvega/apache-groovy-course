@@ -50,4 +50,9 @@ def folder = $/C:\groovy\dan\foo\bar/$
 println folder
 
 
-
+//print classes
+println "asd".class
+println 'asd'.class
+println 'asd ${}'.classr
+println "asd ${}".class
+print folder.class
